@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporting de Gijón</title>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><img src="" alt="" sizes="16x16"></li>
+            <li><a href="#" class="nav">Equipo</a></li>
+            <li><a href="#" class="nav">Contacto</a></li>
+            <li><a href="/index.html" class="nav">Panel de control</a></li>
+            <li><a href="/inventory.html" class="nav">Inventory</a></li>
+        </ul>
+    </nav>
+
+    <h3>Productos</h3>
+
+    <form class="products-form" id="inventory-form">
+        <label for="product-name"></label>
+        <input type="text" class="product-name" placeholder="Nombre" required>
+        <label for="product-quantity"></label>
+        <input type="number" class="quantity" id="product-quantity" placeholder="Cantidad" required>
+        <label for="product-price"></label>
+        <input type="number" class="price" id="product-price" placeholder="Precio" step="0.01" required>
+
+        <button id="add-product" class="add-product" type="submit">Añadir producto</button>
+
+        <div class="search-container">
+            <input type="text" id="searchByName" placeholder="Buscar" class="search">
+            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
+        </div>
+    </form>
+
+    <table id="inventory-table" class="inventory-table">
+        <tr>
+            <th>PRODUCTO</th>
+            <th>STOCK</th>
+            <th>PRECIO</th>
+            <th>ACCIONES</th>
+        </tr>
+
+        <tbody id="inventory-content"></tbody>
+    </table>
+
+    <script src="/scripts/index.js" type="module"></script>
+</body>
+</html>
