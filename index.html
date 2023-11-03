@@ -21,7 +21,7 @@
 
     <form class="products-form" id="inventory-form">
         <label for="product-name"></label>
-        <input type="text" class="product-name" placeholder="Nombre" required>
+        <input type="text" class="product-name" id="product-name" placeholder="Nombre" required>
         <label for="product-quantity"></label>
         <input type="number" class="quantity" id="product-quantity" placeholder="Cantidad" required>
         <label for="product-price"></label>
@@ -30,8 +30,8 @@
         <button id="add-product" class="add-product" type="submit">Añadir producto</button>
 
         <div class="search-container">
-            <input type="text" id="searchByName" placeholder="Buscar" class="search">
-            <button class="fa-solid fa-magnifying-glass fa-lg" style="color: #477cd7;"></button>
+            <input type="text" id="searchProduct" placeholder="Buscar" class="search">
+            <button id="searchProduct">Buscar</button>
         </div>
     </form>
 

@@ -19,7 +19,14 @@ export const listProducts = () => {
         editButton.innerText = "Editar"
         editButton.classList.add("edit-button")
         editButton.addEventListener("click", () => {
-            //
+            for (let producto of inventario) {
+                if (producto.nombre === nombre) {
+                    producto.cantidad = nuevaCantidad;
+                    producto.precio = nuevoPrecio;
+                    return;
+                }
+            }
+            console.log("Producto no encontrado.");
         })
 
         cell4.appendChild(editButton)
