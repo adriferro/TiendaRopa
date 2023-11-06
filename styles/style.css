@@ -25,6 +25,10 @@ h1{
 table{
     margin: 0 auto;
     padding: 1rem;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+    color: black;
 }
 
 .search{
@@ -38,7 +42,6 @@ form{
 th{
     font-family: Oswald;
     padding: 1rem;
-    text-align: center;
     text-decoration: underline;
 }
 
@@ -49,6 +52,7 @@ button{
     font-weight: 600;
     text-decoration: solid;
     font-size: 17px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -75,4 +79,15 @@ input{
 tbody{
     font-family: Arsenal;
     font-weight: 600;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1px solid black;
+    margin: 8px;
+    text-align: center;
+}
+
+.table-inventory tr:hover{
+    background-color: rgb(181, 181, 181);
 }
