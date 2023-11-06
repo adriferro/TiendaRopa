@@ -7,35 +7,25 @@
     <title>Sporting de Gijón</title>
 </head>
 <body>
-    <nav class="menu">
-        <ul>
-            <li><img src="" alt="" sizes="16x16"></li>
-            <li><a href="#" class="nav">Equipo</a></li>
-            <li><a href="#" class="nav">Contacto</a></li>
-            <li><a href="/index.html" class="nav">Panel de control</a></li>
-            <li><a href="/inventory.html" class="nav">Inventory</a></li>
-        </ul>
-    </nav>
-
     <h3>Productos</h3>
 
-    <form class="products-form" id="inventory-form">
-        <label for="product-name"></label>
-        <input type="text" class="product-name" id="product-name" placeholder="Nombre" required>
-        <label for="product-quantity"></label>
-        <input type="number" class="quantity" id="product-quantity" placeholder="Cantidad" required>
-        <label for="product-price"></label>
-        <input type="number" class="price" id="product-price" placeholder="Precio" step="0.01" required>
+    <form id="productForm">
+        <label for="productName"></label>
+        <input type="text" id="productName" placeholder="Nombre" required>
+        <label for="productQuantity"></label>
+        <input type="number" id="productQuantity" placeholder="Cantidad" required>
+        <label for="productPrice"></label>
+        <input type="number" id="productPrice" placeholder="Precio" step="0.01" required>
 
-        <button id="add-product" class="add-product" type="submit">Añadir producto</button>
+        <button type="submit">Añadir producto</button>
 
-        <div class="search-container">
-            <input type="text" id="searchProduct" placeholder="Buscar" class="search">
-            <button id="searchProduct">Buscar</button>
+        <div>
+            <input type="text" id="searchProduct" placeholder="Buscar">
+            <button id="btnSearch">Buscar</button>
         </div>
     </form>
 
-    <table id="inventory-table" class="inventory-table">
+    <table>
         <tr>
             <th>PRODUCTO</th>
             <th>STOCK</th>
@@ -43,7 +33,7 @@
             <th>ACCIONES</th>
         </tr>
 
-        <tbody id="inventory-content"></tbody>
+        <tbody id="cleanTable"></tbody>
     </table>
 
     <script src="/scripts/index.js" type="module"></script>
