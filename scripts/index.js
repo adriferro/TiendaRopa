@@ -2,7 +2,6 @@ import { listProducts } from "./listProducts.js";
 import { insertProducts } from "./insertProducts.js";
 import { inventory } from "./products.js";
 
-//document.addEventListener("DOMContentLoaded", listProducts);
 
 listProducts()
 
