@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('/assets/fonts/Oswald.ttf');
+  }
+
+@font-face {
+    font-family: 'Arsenal';
+    src: url('/assets/fonts/Arsenal.ttf');
+  }
+
+body{
+    background-image: url('/assets/fondo.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+h1{
+    font-family: Oswald;
+    font-size: 100px;
+}
+
+table{
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.search{
+    margin-bottom: 1rem;
+}
+
+form{
+    margin-bottom: 1rem;
+}
+
+th{
+    font-family: Oswald;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+button{
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Arsenal;
+    font-weight: 600;
+    text-decoration: solid;
+    font-size: 17px;
+}
+
+button:hover{
+  background-color: rgb(181, 181, 181);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+input{
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Arsenal;
+    font-size: 17px;
+}
+
+tbody{
+    font-family: Arsenal;
+    font-weight: 600;
+}
