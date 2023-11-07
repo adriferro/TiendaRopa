@@ -9,14 +9,12 @@
   }
 
 body{
-    width: 99vw;
-    height: 99vh;
-    background-image: url('/assets/fondo.jpg'); 
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position: center center;
-    background-attachment: fixed;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 58%, rgba(255,0,0,1) 100%);
     text-align: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1{
