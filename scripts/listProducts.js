@@ -40,13 +40,10 @@ export const listProducts = (products) => {
         editBtn.innerText = "EDITAR";
         editBtn.id = "editButton";
 
-        const confirmBtn = document.createElement("button");
-        confirmBtn.innerText = "CONFIRMAR";
 
+        editBtn.addEventListener("click", () => {
+            editBtn.style.display = "none"
 
-        /*editBtn.addEventListener("click", () => {
-
-            confirmBtn.style.display = "inline"
             const quantityInput = document.createElement("input");
             quantityInput.type = "number"; 
             quantityInput.value = item.quantity;
@@ -54,6 +51,15 @@ export const listProducts = (products) => {
             const priceInput = document.createElement("input");
             priceInput.type = "text"; 
             priceInput.value = item.price;
+
+            cell2.innerHTML = "";
+            cell2.appendChild(quantityInput);
+            cell3.innerHTML = "";
+            cell3.appendChild(priceInput);
+
+            const confirmBtn = document.createElement("button");
+            confirmBtn.innerText = "CONFIRMAR";
+            cell4.appendChild(confirmBtn)
 
             confirmBtn.addEventListener("click", () => {
                 item.quantity = quantityInput.value;
@@ -62,62 +68,10 @@ export const listProducts = (products) => {
                 cell2.innerHTML = item.quantity;
                 cell3.innerHTML = item.price;
 
-                deleteBtn.style.display = "inline";
-                editBtn.style.display = "inline";
-
-                cell2.removeChild(quantityInput);
-                cell3.removeChild(priceInput);
                 cell4.removeChild(confirmBtn);
 
-                confirmBtn.style.display = "none"
-                confirmBtn.removeEventListener("click", confirmClick)
+                editBtn.style.display = "inline"
             });
-
-            cell2.innerHTML = "";
-            cell2.appendChild(quantityInput);
-            cell3.innerHTML = "";
-            cell3.appendChild(priceInput);
-            cell4.innerHTML = "";
-            cell4.appendChild(confirmBtn)
-
-        });
-        cell4.appendChild(editBtn);*/
-
-
-        editBtn.addEventListener("click", () => {
-            confirmBtn.style.display = "inline";
-            const quantityInput = document.createElement("input");
-            quantityInput.type = "number"; 
-            quantityInput.value = item.quantity;
-        
-            const priceInput = document.createElement("input");
-            priceInput.type = "text"; 
-            priceInput.value = item.price;
-        
-            cell2.innerHTML = "";
-            cell2.appendChild(quantityInput);
-            cell3.innerHTML = "";
-            cell3.appendChild(priceInput);
-            cell4.innerHTML = "";
-            cell4.appendChild(confirmBtn);
-        });
-        
-        confirmBtn.addEventListener("click", function confirmClick() {
-            item.quantity = quantityInput.value;
-            item.price = priceInput.value;
-        
-            cell2.innerHTML = item.quantity;
-            cell3.innerHTML = item.price;
-        
-            deleteBtn.style.display = "inline";
-            editBtn.style.display = "inline";
-        
-            cell2.removeChild(quantityInput);
-            cell3.removeChild(priceInput);
-            cell4.removeChild(confirmBtn);
-        
-            confirmBtn.style.display = "none";
-            confirmBtn.removeEventListener("click", confirmClick);
         });
         cell4.appendChild(editBtn);
     });

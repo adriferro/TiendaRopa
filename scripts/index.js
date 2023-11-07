@@ -22,5 +22,9 @@ btnSearch.addEventListener("click", () => {
     const cleanTable = document.getElementById("cleanTable");
     cleanTable.innerHTML = "";
 
-    listProducts(filteredProducts);
+    if (filteredProducts.length === 0) {
+        alert("No se encontraron productos que coincidan con la búsqueda.");
+    } else {
+        listProducts(filteredProducts);
+    }
 });
