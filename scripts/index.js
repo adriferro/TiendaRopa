@@ -1,3 +1,6 @@
+//Adrián Fernández Rodríguez
+//
+
 import { listProducts } from "./listProducts.js";
 import { insertProducts } from "./insertProducts.js";
 import { inventory } from "./products.js";
