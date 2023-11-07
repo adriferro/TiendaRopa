@@ -24,7 +24,8 @@ btnSearch.addEventListener("click", () => {
 
     if (filteredProducts.length === 0) {
         alert("No se encontraron productos que coincidan con la búsqueda.");
-    } else {
-        listProducts(filteredProducts);
+        cleanTable.innerHTML = "No hay productos."
+        return;
     }
+        listProducts(filteredProducts);
 });
