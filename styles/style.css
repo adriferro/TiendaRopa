@@ -9,6 +9,8 @@
   }
 
 body{
+    width: 99vw;
+    height: 99vh;
     background-image: url('/assets/fondo.jpg'); 
     background-size: cover; 
     background-repeat: no-repeat; 
@@ -26,9 +28,10 @@ table{
     margin: 0 auto;
     padding: 1rem;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     color: black;
+    margin-bottom: 10px;
 }
 
 .search{
@@ -43,6 +46,7 @@ th{
     font-family: Oswald;
     padding: 1rem;
     text-decoration: underline;
+    background: linear-gradient(rgb(255, 0, 0),rgb(255, 255, 255));
 }
 
 button{
@@ -90,4 +94,12 @@ th, td {
 
 .table-inventory tr:hover{
     background-color: rgb(181, 181, 181);
+}
+
+#editButton{
+    margin-left: 10px;
+}
+
+.espace{
+    height: 6rem;
 }
